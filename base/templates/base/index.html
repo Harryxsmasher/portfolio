@@ -194,11 +194,12 @@
             let subject = document.getElementById('subject').value;
             let message = document.getElementById('message').value;
             const body = 'name: '+name + '<br/> email: ' +email + '<br/> subject: '+subject + '<br/> message: '+message; 
+            console.log(name, email, subject, message)
             form.reset()
         Email.send({
            
             SecureToken : "{{ secureToken }}",
-            To : '"{{ emailTo }}"',
+            To : "{{ emailTo }}",
             From : "{{emailFrom }}",
             Subject : "Contact Message",
             Body : body
