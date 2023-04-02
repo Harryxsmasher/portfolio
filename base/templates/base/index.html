@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    <title>Praveen Tychicus</title>
+</head>
+<body>
+    <section class="s1">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+            <h1>Hi, I'm Praveen Mark Tychicus</h1>
+            </div>
+
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                <div class="dots-wrapper">
+                    <div id="dot-1" class="browser-dot"></div>
+                    <div id="dot-2" class="browser-dot"></div>
+                    <div id="dot-3" class="browser-dot"></div>
+                </div>
+                <ul id="navigation">
+                    <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                    
+                </ul>
+                </div>
+
+                <div class="left-column">
+                    <img id="profile_pic" src="{% static 'images/pp.jpeg' %}" alt="">
+                    <h5 style="text-align: center; line-height: 0%;">Personalize Theme</h5>
+                    <div id="theme-option-wrapper">
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                    </div>
+                    <p id="settings-note">Theme option will be saved for <br> your next visit</p>
+                </div>
+
+                <div class="right-column">
+
+                    <div id="preview-shadow">
+                    <div id="preview">
+                        <div id="corner-tl" class="corner"></div>
+                        <div id="corner-tr" class="corner"></div>
+                        <h3>What I Do</h3>
+                        <p>I am a Junior Software Consultant, I can develop a Full Stack web Application</p>
+                        <p>I am also a Data Analyst</p>
+                        <div id="corner-bl" class="corner"></div>
+                        <div id="corner-br" class="corner"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="main-container">
+
+           <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More About me</h4>
+                    <p>As a Junior Consultant..</p>
+                    <p>My First project was a Full stack web application developed in PHP and MySQL.</p>
+                    <p>HTML, CSS and JS for the frontend and PHP, MySQL for the backend</p>
+                    
+                    <p>My Second project was with an Ecommerce platform, where my position as a Data Analyst</p>
+                
+                <hr>
+                <h4>Top Expertise</h4>
+                <p>Full Stack Web Developer. Please Click the link to download my Resume:  <a target="_blank" href="{% static 'Praveen_resume.pdf' %}">Download Resume</a></p>
+                
+                <div id="skills">
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Node JS</li>
+                        <li>MySQL</li>
+                        <li>PHP</li>
+                    </ul>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Power BI</li>
+                        <li>Data Analysis</li>
+                        <li>Python Kivy</li>
+                    </ul>
+                </div>
+            </div>
+                
+                
+                <div class="social-links">
+                 <img id="social_img" src="{% static 'images/github.png'%}" alt="">
+                <h3>Check out my LinkedIn Profile and GitHub projects</h3>
+                <a target="_blank" href="https://tinyurl.com/aeze8vhz">LinkedIn Link: Praveen Mark Tychicus</a>
+                <a target="_blank" href="https://github.com/Harryxsmasher">Github Link: @Harryxsmasher</a>
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="s1">
+        <div class="main-container">
+            <h3 style="text-align: center;">Some of my projects</h3>
+           
+        <div class="post-wrapper">
+            <div>
+                <div class="post">
+                    <img class="thumbnail" src="{% static 'images/project1.png' %}" alt="">
+                    <div class="post-preview">
+                        <h6 class="post-title">Django Full Stack Crud APP</h6>
+                        <p class="post-intro">This is a Student management Django Crud application with Sqlite db, the frontend is made with Bootstrap and Bootswatch</p>
+                        <!-- <a href="post.html">Read More</a> -->
+                        <br>
+                        <a href="http://harry5678.pythonanywhere.com/">Access the Django Full Stack CRUD APP</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div>
+                <div class="post">
+                    <img class="thumbnail" src="images/project1.png" alt="">
+                    <div class="post-preview">
+                        <h6 class="post-title">Post Title</h6>
+                        <p class="post-intro">this is a sentence. some more text here</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="post">
+                    <img class="thumbnail" src="images/project1.png" alt="">
+                    <div class="post-preview">
+                        <h6 class="post-title">Post Title</h6>
+                        <p class="post-intro">this is a sentence. some more text here</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div> -->
+
+           
+
+
+           </div>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="main-container">
+            <h3 style="text-align: center;">Get in Touch</h3>
+            <form action="" id="contact-form" >
+                <a name="contact"></a>
+                <label>Name</label>
+                <input class="input-field" type="text" id="name">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" id="subject">
+
+                <label>Email</label>
+                <input class="input-field" type="text" id="email">
+
+                <label>Message</label>
+                <textarea class="input-field" id="message"></textarea>
+
+                <input type="submit" value="Send" id="submitbtn">
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        let static = "{% static 'css' %}"
+    </script>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        const submitbtn = document.getElementById('submitbtn');
+        const form = document.getElementById('contact-form')
+        submitbtn.addEventListener('click', function(e){
+            e.preventDefault()
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let subject = document.getElementById('subject').value;
+            let message = document.getElementById('message').value;
+            const body = 'name: '+name + '<br/> email: ' +email + '<br/> subject: '+subject + '<br/> message: '+message; 
+            form.reset()
+        Email.send({
+           
+            SecureToken : "{{ secureToken }}",
+            To : '"{{ emailTo }}"',
+            From : "{{emailFrom }}",
+            Subject : "Contact Message",
+            Body : body
+        }).then(
+        message => alert(message)
+        );
+        
+        })
+    </script>
+</body>
+</html>
