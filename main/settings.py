@@ -32,7 +32,7 @@ SECRET_KEY = env('D_SECRET')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['harrispraveen3.pythonanywhere.com']
 
 
 # Application definition
